@@ -34,14 +34,15 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="31dp"
         android:text="Tweet offers Human Hair Wig Extensions"
-        android:textSize="40sp"/>
+        android:textAlignment="center"
+        android:textSize="40sp" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/locationEditText"
         android:background="@color/colorTextIcons"
-        android:layout_above="@+id/findRestaurantsButton"
+        android:layout_above="@+id/findCategoriesButton"
         android:layout_marginBottom="10dp"
         android:padding="5dp"
         android:hint="Enter Zip Code"
@@ -51,7 +52,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Find Categories"
-        android:id="@+id/findRestaurantsButton"
+        android:id="@+id/findCategoriesButton"
         android:background="@color/colorAccent"
         android:textColor="@color/colorTextIcons"
         android:layout_alignParentBottom="true"
