@@ -19,7 +19,7 @@ public class CategoriesActivity extends AppCompatActivity {
         gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View v,
                                     int position, long id) {
-                Toast.makeText(HelloGridView.this, "" + position,
+                Toast.makeText(CategoriesActivity.this, "" + position,
                         Toast.LENGTH_SHORT).show();
             }
         });
