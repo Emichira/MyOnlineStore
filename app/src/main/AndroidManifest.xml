@@ -21,8 +21,18 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="ke.co.emichira.myonlinestore.MainActivity" />
         </activity>
-        <activity android:name=".SignInActivity" />
-        <activity android:name=".RegisterActivity"></activity>
+
+        <activity android:name=".SignInActivity">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="ke.co.emichira.myonlinestore.MainActivity" />
+        </activity>
+
+        <activity android:name=".RegisterActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ke.co.emichira.myonlinestore.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
