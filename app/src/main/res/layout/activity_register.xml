@@ -12,7 +12,10 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         app:srcCompat="@drawable/homepage"
-        android:scaleType="centerCrop"/>
+        android:scaleType="centerCrop"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <EditText
         android:id="@+id/usernameEditText"
@@ -21,53 +24,44 @@
         android:background="@color/colorTextIcons"
         android:hint="Username"
         android:padding="5dp"
-        android:layout_below="@+id/appNameTextView"
-        android:layout_alignRight="@+id/signInButton"
-        android:layout_alignEnd="@+id/signInButton" />
+        android:layout_marginTop="107dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/passwordEditText"
+        android:layout_alignStart="@+id/passwordEditText" />
 
     <EditText
         android:id="@+id/passwordEditText"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/signInButton"
-        android:layout_centerHorizontal="true"
         android:background="@color/colorTextIcons"
         android:hint="password"
-        android:padding="5dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Remember me"
-        android:layout_marginTop="35dp"
-        android:id="@+id/rememberMeTextView"
-        android:textColor="@color/colorPrimaryText"
-        android:textSize="60sp"
-        android:layout_alignParentTop="true"
+        android:padding="5dp"
+        android:layout_below="@+id/usernameEditText"
         android:layout_centerHorizontal="true"
-        android:textStyle="bold" />
+        android:layout_marginTop="34dp" />
 
-    <TextView
-        android:id="@+id/passwordtextView"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/confirmPasswordEditText"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="31dp"
-        android:text="Forgot password?"
-        android:textAlignment="center"
-        android:textSize="40sp"
-        android:layout_below="@+id/appNameTextView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:background="@color/colorTextIcons"
+        android:hint="Confirm password"
+        android:padding="5dp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/passwordEditText"
+        android:layout_alignStart="@+id/passwordEditText" />
 
     <Button
         android:id="@+id/signInButton"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="64dp"
+        android:layout_above="@+id/createAnAccount"
+        android:layout_alignLeft="@+id/passwordEditText"
+        android:layout_alignStart="@+id/passwordEditText"
+        android:layout_marginBottom="20dp"
         android:background="@color/colorAccent"
-        android:text="Sign In"
+        android:text="Continue"
+        android:textSize="20sp"
         android:textColor="@color/colorTextIcons"
         android:textStyle="bold" />
 
@@ -75,13 +69,15 @@
         android:id="@+id/createAnAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="31dp"
         android:text="Terms and Conditions"
         android:textAlignment="center"
-        android:textSize="40sp"
-        android:layout_above="@+id/signInButton"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="82dp"
+        android:textColor="@color/colorTextIcons"
+        />
+
 
 
 </RelativeLayout>
