@@ -36,7 +36,7 @@ public class ImageAdapter extends BaseAdapter{
             if (convertView == null) {
                 // if it's not recycled, initialize some attributes
                 imageView = new ImageView(mContext);
-                imageView.setLayoutParams(new GridView.LayoutParams(85, 85));
+                imageView.setLayoutParams(new GridView.LayoutParams(300, 300));
                 imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
                 imageView.setPadding(8, 8, 8, 8);
             } else {
@@ -49,16 +49,14 @@ public class ImageAdapter extends BaseAdapter{
 
         // references to our images
         private Integer[] mThumbIds = {
-                R.drawable.sample_2, R.drawable.sample_3,
-                R.drawable.sample_4, R.drawable.sample_5,
-                R.drawable.sample_2, R.drawable.sample_7,
-                R.drawable.sample_0, R.drawable.sample_3,
-                R.drawable.sample_2, R.drawable.sample_3,
-                R.drawable.sample_4, R.drawable.sample_5,
-                R.drawable.sample_4, R.drawable.sample_7,
-                R.drawable.sample_0, R.drawable.sample_5,
-                R.drawable.sample_2, R.drawable.sample_3,
-                R.drawable.sample_4, R.drawable.sample_5,
-                R.drawable.sample_3, R.drawable.sample_7
+                R.drawable.bondings,
+                R.drawable.brasilianische,
+                R.drawable.brasilianisches_haar,
+                R.drawable.brazilian_wavy,
+                R.drawable.clip_in,
+                R.drawable.glatt,
+                R.drawable.microlings,
+                R.drawable.tressen_mit_lace,
+                R.drawable.volkolf,
         };
     }
