@@ -19,7 +19,7 @@ public class ImageAdapter extends BaseAdapter{
         }
 
         public int getCount() {
-            return mThumbIds.length;
+            return mImageIds.length;
         }
 
         public Object getItem(int position) {
@@ -43,12 +43,12 @@ public class ImageAdapter extends BaseAdapter{
                 imageView = (ImageView) convertView;
             }
 
-            imageView.setImageResource(mThumbIds[position]);
+            imageView.setImageResource(mImageIds[position]);
             return imageView;
         }
 
         // references to our images
-        private Integer[] mThumbIds = {
+        private Integer[] mImageIds = {
                 R.drawable.bondings,
                 R.drawable.brasilianische,
                 R.drawable.brasilianisches_haar,
