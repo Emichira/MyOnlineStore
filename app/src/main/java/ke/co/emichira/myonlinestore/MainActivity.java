@@ -1,6 +1,5 @@
 package ke.co.emichira.myonlinestore;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -30,7 +29,9 @@ public class MainActivity extends AppCompatActivity {
         mFindCategoriesButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String categories = mFindCategoriesButton.getText().toString();
                 Intent intent = new Intent(MainActivity.this, CategoriesActivity.class);
+                intent.putExtra("categories", categories);
                 startActivity(intent);            }
         });
 

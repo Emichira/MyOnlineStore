@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">MyOnlineStore</string>
+
+    <string name="itemId">itemId</string>
+    <string name="name">name</string>
+    <string name="salePrice" translatable="false">salePrice</string>
+    <string name="categoryPath">categoryPath</string>
+    <string name="largeImage">largeImage</string>
+
 </resources>
