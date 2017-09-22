@@ -69,16 +69,6 @@ public class CategoryListAdapter extends RecyclerView.Adapter<CategoryListAdapte
             itemView.setOnClickListener(this);
         }
 
-        public void bindCategory(Category category) {
-            Picasso.with(mContext)
-                    .load(category.getLargeImage())
-                    .resize(MAX_WIDTH, MAX_HEIGHT)
-                    .centerCrop()
-                    .into(mImageView);
-            mNameTextView.setText(category.getName());
-            mPriceTextView.setText("Price $ " + category.getSalePrice());
-        }
-
         @Override
         public void onClick(View v) {
             Log.d("click listener", "working!");
@@ -87,6 +77,16 @@ public class CategoryListAdapter extends RecyclerView.Adapter<CategoryListAdapte
             intent.putExtra("position", itemPosition + "");
             intent.putExtra("categories", Parcels.wrap(mCategories));
             mContext.startActivity(intent);
+        }
+
+        public void bindCategory(Category category) {
+            Picasso.with(mContext)
+                    .load(category.getLargeImage())
+                    .resize(MAX_WIDTH, MAX_HEIGHT)
+                    .centerCrop()
+                    .into(mImageView);
+            mNameTextView.setText(category.getName());
+            mPriceTextView.setText("Price $ " + category.getSalePrice());
         }
     }
 }

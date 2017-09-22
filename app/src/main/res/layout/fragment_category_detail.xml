@@ -1,0 +1,59 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ke.co.emichira.myonlinestore.CategoryDetailFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/imageViewFragment"
+        android:layout_width="373dp"
+        android:layout_height="241dp"
+        android:src="@drawable/brasilianisches_haar"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/nameView"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/pathView"
+        android:layout_width="105dp"
+        android:layout_height="26dp"
+        android:text="Not Available"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/priceView"
+        android:layout_width="133dp"
+        android:layout_height="32dp"
+        android:text="Not Available"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/urlView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/ic_attach_money_white_24dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"/>
+
+</FrameLayout>

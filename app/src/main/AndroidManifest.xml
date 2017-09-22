@@ -2,10 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ke.co.emichira.myonlinestore">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
-
 
     <application
         android:allowBackup="true"
@@ -26,18 +24,17 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="ke.co.emichira.myonlinestore.MainActivity" />
         </activity>
-
         <activity android:name=".SignInActivity">
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value="ke.co.emichira.myonlinestore.MainActivity" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ke.co.emichira.myonlinestore.MainActivity" />
         </activity>
-
         <activity android:name=".RegisterActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="ke.co.emichira.myonlinestore.MainActivity" />
         </activity>
+        <activity android:name=".ui.CategoryDetailActivity"></activity>
     </application>
 
 </manifest>

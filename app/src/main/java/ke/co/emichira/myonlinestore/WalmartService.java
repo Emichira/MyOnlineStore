@@ -26,7 +26,6 @@ public class WalmartService {
         HttpUrl.Builder urlBuilder = HttpUrl.parse(Constants.WALMART_BASE_URL).newBuilder();
         urlBuilder.addQueryParameter(Constants.WALMART_QUERY, categories);
         urlBuilder.addQueryParameter(Constants.API_KEY_BASE,Constants.WALMART_API_KEY);
-        urlBuilder.addQueryParameter(Constants.API_FORMAT,"format");
         String url = urlBuilder.build().toString();
 
         Request request= new Request.Builder()
