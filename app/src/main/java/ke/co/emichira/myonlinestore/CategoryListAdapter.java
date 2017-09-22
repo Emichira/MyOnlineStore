@@ -10,6 +10,10 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import ke.co.emichira.myonlinestore.CategoriesDetailActivity;
+import ke.co.emichira.myonlinestore.R;
+import ke.co.emichira.myonlinestore.Category;
+
 import com.squareup.picasso.Picasso;
 
 import org.parceler.Parcels;
@@ -71,10 +75,10 @@ public class CategoryListAdapter extends RecyclerView.Adapter<CategoryListAdapte
 
         @Override
         public void onClick(View v) {
-            Log.d("click listener", "working!");
+//            Log.d("click listener", "working!");
             int itemPosition = getLayoutPosition();
             Intent intent = new Intent(mContext, CategoryDetailActivity.class);
-            intent.putExtra("position", itemPosition + "");
+            intent.putExtra("position", itemPosition);
             intent.putExtra("categories", Parcels.wrap(mCategories));
             mContext.startActivity(intent);
         }

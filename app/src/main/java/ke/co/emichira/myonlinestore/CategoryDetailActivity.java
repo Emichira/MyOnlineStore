@@ -4,6 +4,10 @@ import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
+import ke.co.emichira.myonlinestore.R;
+import ke.co.emichira.myonlinestore.CategoryPagerAdapter;
+import ke.co.emichira.myonlinestore.Category;
+
 import org.parceler.Parcels;
 
 import java.util.ArrayList;

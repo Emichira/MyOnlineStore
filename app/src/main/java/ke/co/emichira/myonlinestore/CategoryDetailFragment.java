@@ -22,11 +22,15 @@ import butterknife.ButterKnife;
  * A simple {@link Fragment} subclass.
  */
 public class CategoryDetailFragment extends Fragment implements View.OnClickListener {
-        @Bind(R.id.imageViewFragment) ImageView mImageView;
-        @Bind(R.id.nameView) TextView mNameView;
-        @Bind(R.id.priceView) TextView mPriceView;
-        @Bind(R.id.pathView) TextView mPathView;
-        @Bind(R.id.urlView) TextView mUrlView;
+
+    private static final int MAX_WIDTH = 400;
+    private static final int MAX_HEIGHT = 321;
+
+        @Bind(R.id.productImageView) ImageView mImageView;
+        @Bind(R.id.nameTextView) TextView mNameView;
+        @Bind(R.id.priceTextView) TextView mPriceView;
+        @Bind(R.id.pathTextView) TextView mPathView;
+        @Bind(R.id.urlTextView) TextView mUrlView;
 
         private Category mCategory;
 
@@ -52,7 +56,11 @@ public class CategoryDetailFragment extends Fragment implements View.OnClickList
 
             ButterKnife.bind(this, view);
 
-            Picasso.with(view.getContext()).load(mCategory.getLargeImage()).into(mImageView);
+            Picasso.with(view.getContext())
+                    .load(mCategory.getLargeImage())
+                    .resize(MAX_WIDTH, MAX_HEIGHT)
+                    .centerCrop()
+                    .into(mImageView);
             mNameView.setText(mCategory.getName());
             mPriceView.setText(String.valueOf(mCategory.getSalePrice()));
             mPathView.setText(mCategory.getCategoryPath());

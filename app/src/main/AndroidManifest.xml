@@ -34,7 +34,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="ke.co.emichira.myonlinestore.MainActivity" />
         </activity>
-        <activity android:name=".ui.CategoryDetailActivity"></activity>
+        <activity android:name=".CategoryDetailActivity"></activity>
     </application>
 
 </manifest>
