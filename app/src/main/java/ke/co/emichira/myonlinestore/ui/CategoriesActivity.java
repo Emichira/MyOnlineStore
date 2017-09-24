@@ -1,18 +1,25 @@
 package ke.co.emichira.myonlinestore.ui;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
+import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.SearchView;
 import android.util.Log;
-import android.widget.TextView;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;import android.widget.TextView;
 
 import java.io.IOException;
 import java.util.ArrayList;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import ke.co.emichira.myonlinestore.Constants;
 import ke.co.emichira.myonlinestore.R;
 import ke.co.emichira.myonlinestore.adapters.CategoryListAdapter;
 import ke.co.emichira.myonlinestore.models.Category;
@@ -21,6 +28,10 @@ import okhttp3.Call;
 import okhttp3.Response;
 
 public class CategoriesActivity extends AppCompatActivity {
+
+    private SharedPreferences mSharedPreferences;
+    private SharedPreferences.Editor mEditor;
+    private String mRecentSearch;
 
     @Bind(R.id.categoryTextView) TextView mCategoryView;
     @Bind(R.id.recyclerView) RecyclerView mRecyclerView;
@@ -35,20 +46,18 @@ public class CategoriesActivity extends AppCompatActivity {
 
         ButterKnife.bind(this);
 
-//        GridView gridview = (GridView) findViewById(R.id.gridview);
-//        gridview.setAdapter(new ImageAdapter(this));
-//
-//        gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            public void onItemClick(AdapterView<?> parent, View v,
-//                                    int position, long id) {
-//                Toast.makeText(CategoriesActivity.this, "" + position,
-//                        Toast.LENGTH_SHORT).show();
-//            }
-//        });
-
         Intent intent = getIntent();
         String categories =intent.getStringExtra("categories");
         getCategories("categories");
+
+        getCategories(categories);
+
+        mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        mRecentSearch = mSharedPreferences.getString(Constants.PREFERENCES_SEARCH_KEY, null);
+
+        if (mRecentSearch != null) {
+            getCategories(mRecentSearch);
+        }
 
         mCategoryView.setText("Here are all the categories that match: " + categories);
     }
@@ -90,5 +99,47 @@ public class CategoriesActivity extends AppCompatActivity {
             }
 
         });
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_search, menu);
+        ButterKnife.bind(this);
+
+        mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        mEditor = mSharedPreferences.edit();
+
+        MenuItem menuItem = menu.findItem(R.id.action_search);
+        SearchView searchView = (SearchView) MenuItemCompat.getActionView(menuItem);
+
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                addToSharedPreferences(query);
+                getCategories(query);
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                return false;
+            }
+
+        });
+
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        return super.onOptionsItemSelected(item);
+    }
+
+
+
+    private void addToSharedPreferences(String categories) {
+        mEditor.putString(Constants.PREFERENCES_SEARCH_KEY, categories).apply();
     }
 }
