@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "345092757864",
+    "firebase_url": "https://myonlinestore-dcf08.firebaseio.com",
+    "project_id": "myonlinestore-dcf08",
+    "storage_bucket": "myonlinestore-dcf08.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:345092757864:android:d70deb195d19518f",
+        "android_client_info": {
+          "package_name": "ke.co.emichira.myonlinestore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "345092757864-18gj9n3mc4c3o1o8hdo1u9u4050g10ek.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ke.co.emichira.myonlinestore",
+            "certificate_hash": "9022b85d1abda99bd7e28a9564d2085a780b107a"
+          }
+        },
+        {
+          "client_id": "345092757864-q76v43pbih837bp0dgar5fqr2hb08i7j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAy2HFdx0hijj1AjX9yK6VSo-Xc3Y3xQPw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "345092757864-q76v43pbih837bp0dgar5fqr2hb08i7j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

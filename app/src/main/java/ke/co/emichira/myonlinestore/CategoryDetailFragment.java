@@ -23,8 +23,8 @@ import butterknife.ButterKnife;
  */
 public class CategoryDetailFragment extends Fragment implements View.OnClickListener {
 
-    private static final int MAX_WIDTH = 400;
-    private static final int MAX_HEIGHT = 321;
+    private static final int MAX_WIDTH = 200;
+    private static final int MAX_HEIGHT = 200;
 
         @Bind(R.id.productImageView) ImageView mImageView;
         @Bind(R.id.nameTextView) TextView mNameView;
