@@ -12,29 +12,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CategoriesActivity">
+        <activity android:name=".ui.CategoriesActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="ke.co.emichira.myonlinestore.MainActivity" />
+                android:value="ke.co.emichira.myonlinestore.ui.MainActivity" />
         </activity>
-        <activity android:name=".SignInActivity">
+        <activity android:name=".ui.SignInActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="ke.co.emichira.myonlinestore.MainActivity" />
+                android:value="ke.co.emichira.myonlinestore.ui.MainActivity" />
         </activity>
-        <activity android:name=".RegisterActivity">
+        <activity android:name=".ui.RegisterActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="ke.co.emichira.myonlinestore.MainActivity" />
+                android:value="ke.co.emichira.myonlinestore.ui.MainActivity" />
         </activity>
-        <activity android:name=".CategoryDetailActivity"></activity>
+        <activity android:name=".ui.CategoryDetailActivity"></activity>
     </application>
 
 </manifest>

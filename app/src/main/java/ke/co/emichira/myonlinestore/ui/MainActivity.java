@@ -10,7 +10,6 @@ import android.widget.TextView;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
-import ke.co.emichira.myonlinestore.CategoriesActivity;
 import ke.co.emichira.myonlinestore.R;
 
 public class MainActivity extends AppCompatActivity {

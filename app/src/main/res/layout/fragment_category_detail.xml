@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="ke.co.emichira.myonlinestore.CategoryDetailFragment">
+    tools:context="ke.co.emichira.myonlinestore.ui.CategoryDetailFragment">
 
 
     <LinearLayout
@@ -99,7 +99,7 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Buy Product"
+                android:text="Save Product"
                 android:id="@+id/saveRestaurantButton"
                 android:layout_alignParentBottom="true"
                 android:background="@color/colorAccent"
