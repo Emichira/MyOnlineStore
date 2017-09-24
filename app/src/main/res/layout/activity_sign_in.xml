@@ -4,93 +4,78 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
-    tools:context="ke.co.emichira.myonlinestore.ui.MainActivity">
+    tools:context="ke.co.emichira.myonlinestore.ui.MainActivity"
+    android:background="@color/colorPrimary">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        app:srcCompat="@drawable/homepage"
-        android:scaleType="centerCrop"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <EditText
-        android:id="@+id/usernameEditText"
-        android:layout_width="300dp"
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorTextIcons"
-        android:hint="Username"
-        android:padding="5dp"
-        android:layout_marginTop="107dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignLeft="@+id/passwordEditText"
-        android:layout_alignStart="@+id/passwordEditText" />
-
-    <EditText
-        android:id="@+id/passwordEditText"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:background="@color/colorTextIcons"
-        android:hint="password"
-        android:padding="5dp"
-        android:layout_below="@+id/usernameEditText"
+        android:padding="30dp"
+        android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="34dp" />
+        android:id="@+id/linearLayout">
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:nextFocusDown="@+id/passwordEditText"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/colorDivider"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:nextFocusDown="@+id/passwordEditText"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/colorDivider"
+            android:textSize="20sp" />
+
+
+        <Button
+            android:id="@+id/passwordLoginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Log in"
+            android:background="@color/colorAccent"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/colorTextIcons" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorTextIcons"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="Don't have an account? Sign up here!"
+            android:id="@+id/registerTextView"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Forgot password?"
-        android:id="@+id/forgetPasswordTextView"
-        android:textColor="@color/colorTextIcons"
-        android:textSize="20sp"
-        android:layout_alignBaseline="@+id/rememberMeTextView"
-        android:layout_alignBottom="@+id/rememberMeTextView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="11dp"
-        android:layout_marginStart="11dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Remember me"
-        android:id="@+id/rememberMeTextView"
-        android:textColor="@color/colorTextIcons"
-        android:textSize="20sp"
-        android:layout_below="@+id/passwordEditText"
-        android:layout_alignRight="@+id/signInButton"
-        android:layout_alignEnd="@+id/signInButton"
-        android:layout_marginTop="47dp" />
-
-    <Button
-        android:id="@+id/signInButton"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
-        android:text="Sign In"
-        android:textColor="@color/colorTextIcons"
+        android:text="Login"
+        android:textColor="@color/colorPrimaryLight"
+        android:textSize="30dp"
         android:textStyle="bold"
-        android:layout_above="@+id/createAnAccount"
-        android:layout_alignLeft="@+id/passwordEditText"
-        android:layout_alignStart="@+id/passwordEditText"
-        android:layout_marginBottom="20dp" />
-
-    <TextView
-        android:id="@+id/createAnAccount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Create and account"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="82dp"
-        android:textColor="@color/colorTextIcons"
-        />
+        android:layout_above="@+id/linearLayout"
+        android:layout_centerHorizontal="true" />
 
 
 
