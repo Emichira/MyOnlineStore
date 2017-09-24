@@ -1,10 +1,14 @@
-package ke.co.emichira.myonlinestore;
+package ke.co.emichira.myonlinestore.adapters;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 import java.util.ArrayList;
+
+import ke.co.emichira.myonlinestore.ui.CategoryDetailFragment;
+import ke.co.emichira.myonlinestore.models.Category;
+
 
 /**
  * Created by michira on 9/19/17.

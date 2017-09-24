@@ -1,4 +1,4 @@
-package ke.co.emichira.myonlinestore;
+package ke.co.emichira.myonlinestore.ui;
 
 import android.content.Intent;
 import android.graphics.Typeface;
@@ -10,6 +10,8 @@ import android.widget.TextView;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import ke.co.emichira.myonlinestore.CategoriesActivity;
+import ke.co.emichira.myonlinestore.R;
 
 public class MainActivity extends AppCompatActivity {
     @Bind(R.id.findCategoriesButton) Button mFindCategoriesButton;

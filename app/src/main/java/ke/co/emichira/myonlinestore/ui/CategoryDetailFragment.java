@@ -1,4 +1,4 @@
-package ke.co.emichira.myonlinestore;
+package ke.co.emichira.myonlinestore.ui;
 
 
 import android.content.Intent;
@@ -17,6 +17,8 @@ import org.parceler.Parcels;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import ke.co.emichira.myonlinestore.R;
+import ke.co.emichira.myonlinestore.models.Category;
 
 /**
  * A simple {@link Fragment} subclass.

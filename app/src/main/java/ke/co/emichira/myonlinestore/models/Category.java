@@ -1,4 +1,4 @@
-package ke.co.emichira.myonlinestore;
+package ke.co.emichira.myonlinestore.models;
 
 import org.parceler.Parcel;
 

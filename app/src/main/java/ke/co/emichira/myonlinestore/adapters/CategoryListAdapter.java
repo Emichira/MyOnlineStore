@@ -1,18 +1,13 @@
-package ke.co.emichira.myonlinestore;
+package ke.co.emichira.myonlinestore.adapters;
 
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import ke.co.emichira.myonlinestore.CategoriesDetailActivity;
-import ke.co.emichira.myonlinestore.R;
-import ke.co.emichira.myonlinestore.Category;
 
 import com.squareup.picasso.Picasso;
 
@@ -22,6 +17,9 @@ import java.util.ArrayList;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import ke.co.emichira.myonlinestore.models.Category;
+import ke.co.emichira.myonlinestore.R;
+import ke.co.emichira.myonlinestore.ui.CategoryDetailActivity;
 
 /**
  * Created by michira on 9/16/17.

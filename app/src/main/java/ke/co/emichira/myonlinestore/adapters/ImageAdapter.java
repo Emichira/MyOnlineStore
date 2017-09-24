@@ -1,4 +1,4 @@
-package ke.co.emichira.myonlinestore;
+package ke.co.emichira.myonlinestore.adapters;
 
 import android.content.Context;
 import android.view.View;
@@ -6,6 +6,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
+
+import ke.co.emichira.myonlinestore.R;
 
 /**
  * Created by michira on 9/10/17.

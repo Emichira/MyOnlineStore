@@ -1,7 +1,9 @@
-package ke.co.emichira.myonlinestore;
+package ke.co.emichira.myonlinestore.ui;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
+import ke.co.emichira.myonlinestore.R;
 
 public class RegisterActivity extends AppCompatActivity {
 

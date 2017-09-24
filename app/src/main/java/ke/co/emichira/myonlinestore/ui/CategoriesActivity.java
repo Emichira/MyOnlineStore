@@ -1,4 +1,4 @@
-package ke.co.emichira.myonlinestore;
+package ke.co.emichira.myonlinestore.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,6 +13,10 @@ import java.util.ArrayList;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import ke.co.emichira.myonlinestore.R;
+import ke.co.emichira.myonlinestore.adapters.CategoryListAdapter;
+import ke.co.emichira.myonlinestore.models.Category;
+import ke.co.emichira.myonlinestore.services.WalmartService;
 import okhttp3.Call;
 import okhttp3.Response;
 
