@@ -11,11 +11,11 @@ import java.util.ArrayList;
 @Parcel
 public class Category {
 //    public Integer mItemId;
-    public String mName;
-    public String mSalePrice;
-    public String mCategoryPath;
-    public String mLargeImage;
-    public String mUrl;
+    public String name;
+    public String salePrice;
+    public String categoryPath;
+    public String largeImage;
+    public String url;
 
 
     ArrayList<String> mImageEntities = new ArrayList<>();
@@ -26,11 +26,11 @@ public class Category {
 
         public Category(String name, String salePrice, String categoryPath, String largeImage, String url) {
 //            this.mItemId=itemId;
-            this.mName = name;
-            this.mSalePrice = salePrice;
-            this.mCategoryPath = categoryPath;
-            this.mLargeImage = largeImage;
-            this.mUrl=url;
+            this.name = name;
+            this.salePrice = salePrice;
+            this.categoryPath = categoryPath;
+            this.largeImage = largeImage;
+            this.url=url;
 
         }
 
@@ -40,26 +40,26 @@ public class Category {
 
         public String getName() {
 
-            return mName;
+            return name;
         }
 
         public String getSalePrice() {
-            return mSalePrice;
+            return salePrice;
         }
 
         public String getCategoryPath() {
 
-            return mCategoryPath;
+            return categoryPath;
         }
 
         public String getLargeImage() {
 
-            return mLargeImage;
+            return largeImage;
         }
 
         public String getUrl(){
 
-            return mUrl;
+            return url;
         }
 //        public String getLargeImage(String largeImage) {
 //            String largeImage = largeImage.substring(0, largeImage.length() - 5).concat("/o.jpg");

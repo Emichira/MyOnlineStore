@@ -56,6 +56,8 @@ public class CategoriesActivity extends AppCompatActivity {
 
         mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         mRecentSearch = mSharedPreferences.getString(Constants.PREFERENCES_SEARCH_KEY, null);
+        Log.d("Shared Pref Location", mRecentSearch);
+
 
         if (mRecentSearch != null) {
             getCategories(mRecentSearch);

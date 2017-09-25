@@ -61,14 +61,14 @@
         android:textColor="@color/colorTextIcons"
         android:textStyle="bold"
         android:layout_marginBottom="18dp"
-        android:layout_above="@+id/savedRestaurantsButton"
+        android:layout_above="@+id/savedCategoriesButton"
         android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="My Saved Restaurants"
-        android:id="@+id/savedRestaurantsButton"
+        android:text="My Saved Items"
+        android:id="@+id/savedCategoriesButton"
         android:background="@color/colorAccent"
         android:textColor="@color/colorTextIcons"
         android:visibility="visible"

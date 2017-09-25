@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Bind(R.id.appNameTextView) TextView mAppNameTextView;
     @Bind(R.id.signInButton) Button mSignInButton;
 //    @Bind(R.id.signUpButton) Button mSignUpButton;
-    @Bind(R.id.savedRestaurantsButton) Button mSavedRestaurantsButton;
+    @Bind(R.id.savedCategoriesButton) Button mSavedRestaurantsButton;
 
 
     @Override

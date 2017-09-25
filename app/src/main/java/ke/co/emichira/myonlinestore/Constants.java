@@ -10,6 +10,8 @@ public class Constants {
     public static final String WALMART_QUERY = "query";
     public static final String API_KEY_BASE= "apiKey";
     public static final String PREFERENCES_SEARCH_KEY = "categories";
+    public static final String FIREBASE_CHILD_ITEMS = "categories";
+
 }
 
 
