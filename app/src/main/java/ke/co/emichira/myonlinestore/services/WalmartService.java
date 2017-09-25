@@ -1,5 +1,7 @@
 package ke.co.emichira.myonlinestore.services;
 
+import android.util.Log;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -29,6 +31,7 @@ public class WalmartService {
         urlBuilder.addQueryParameter(Constants.WALMART_QUERY, categories);
         urlBuilder.addQueryParameter(Constants.API_KEY_BASE,Constants.WALMART_API_KEY);
         String url = urlBuilder.build().toString();
+        Log.v("url",url);
 
         Request request= new Request.Builder()
                 .header("Authorization", Constants.WALMART_API_KEY)

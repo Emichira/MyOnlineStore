@@ -13,6 +13,8 @@ import butterknife.ButterKnife;
 import ke.co.emichira.myonlinestore.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    public static final String TAG = MainActivity.class.getSimpleName();
+
     @Bind(R.id.findCategoriesButton) Button mFindCategoriesButton;
     @Bind(R.id.appNameTextView) TextView mAppNameTextView;
     @Bind(R.id.signInButton) Button mSignInButton;
@@ -62,9 +64,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
 
             if(v == mFindCategoriesButton) {
-                String categories = mFindCategoriesButton.getText().toString();
+//                String categories = mFindCategoriesButton.getText().toString();
                 Intent intent = new Intent(MainActivity.this, CategoriesActivity.class);
-                intent.putExtra("categories", categories);
+//                intent.putExtra("categories", categories);
                 startActivity(intent);
             }
 
