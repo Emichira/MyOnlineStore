@@ -52,17 +52,17 @@
         android:textColor="@color/colorTextIcons"
         android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/signInButton"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
-        android:text="Sign In"
-        android:textColor="@color/colorTextIcons"
-        android:textStyle="bold"
-        android:layout_marginBottom="18dp"
-        android:layout_above="@+id/savedCategoriesButton"
-        android:layout_centerHorizontal="true" />
+    <!--<Button-->
+        <!--android:id="@+id/signInButton"-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/colorAccent"-->
+        <!--android:text="Sign In"-->
+        <!--android:textColor="@color/colorTextIcons"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_marginBottom="18dp"-->
+        <!--android:layout_above="@+id/savedCategoriesButton"-->
+        <!--android:layout_centerHorizontal="true" />-->
 
     <Button
         android:layout_width="match_parent"
@@ -76,17 +76,5 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="20dp" />
-
-    <!--<Button-->
-        <!--android:id="@+id/signUpButton"-->
-        <!--android:layout_width="200dp"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_above="@+id/signInButton"-->
-        <!--android:layout_centerHorizontal="true"-->
-        <!--android:layout_marginBottom="12dp"-->
-        <!--android:background="@color/colorAccent"-->
-        <!--android:text="Sign Up"-->
-        <!--android:textColor="@color/colorTextIcons"-->
-        <!--android:textStyle="bold" />-->
 
 </RelativeLayout>
