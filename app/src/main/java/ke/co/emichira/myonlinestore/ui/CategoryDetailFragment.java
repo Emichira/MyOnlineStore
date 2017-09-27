@@ -8,15 +8,20 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Picasso;
 
 import org.parceler.Parcels;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import ke.co.emichira.myonlinestore.Constants;
 import ke.co.emichira.myonlinestore.R;
 import ke.co.emichira.myonlinestore.models.Category;
 
@@ -28,13 +33,15 @@ public class CategoryDetailFragment extends Fragment implements View.OnClickList
     private static final int MAX_WIDTH = 200;
     private static final int MAX_HEIGHT = 200;
 
-        @Bind(R.id.productImageView) ImageView mImageView;
-        @Bind(R.id.nameTextView) TextView mNameView;
-        @Bind(R.id.priceTextView) TextView mPriceView;
-        @Bind(R.id.pathTextView) TextView mPathView;
-        @Bind(R.id.urlTextView) TextView mUrlView;
+    @Bind(R.id.productImageView) ImageView mImageView;
+    @Bind(R.id.nameTextView) TextView mNameView;
+    @Bind(R.id.priceTextView) TextView mPriceView;
+    @Bind(R.id.pathTextView) TextView mPathView;
+    @Bind(R.id.urlTextView) TextView mUrlView;
+    @Bind(R.id.saveItemsButton) Button mSaveItem;
 
-        private Category mCategory;
+
+    private Category mCategory;
 
         public static CategoryDetailFragment newInstance(Category category) {
             // Required empty public constructor
@@ -69,15 +76,27 @@ public class CategoryDetailFragment extends Fragment implements View.OnClickList
             mUrlView.setText("Go To Website");
 
             mUrlView.setOnClickListener(this);
+            mSaveItem.setOnClickListener(this);
             return view;
         }
 
         @Override
         public void onClick(View v) {
 
-            Intent webIntent = new Intent(Intent.ACTION_VIEW,
-                    Uri.parse(mCategory.getUrl()));
-            startActivity(webIntent);
+            if(v == mUrlView) {
+
+                Intent webIntent = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse(mCategory.getUrl()));
+                startActivity(webIntent);
+            }
+
+            if(v == mSaveItem) {
+                DatabaseReference productRef = FirebaseDatabase
+                        .getInstance()
+                        .getReference(Constants.FIREBASE_CHILD_ITEMS);
+                productRef.push().setValue(mCategory);
+                Toast.makeText(getContext(), "Saved", Toast.LENGTH_SHORT).show();
+            }
         }
 
 }
