@@ -91,10 +91,10 @@ public class CategoryDetailFragment extends Fragment implements View.OnClickList
             }
 
             if(v == mSaveItem) {
-                DatabaseReference productRef = FirebaseDatabase
+                DatabaseReference categoryRef = FirebaseDatabase
                         .getInstance()
                         .getReference(Constants.FIREBASE_CHILD_ITEMS);
-                productRef.push().setValue(mCategory);
+                categoryRef.push().setValue(mCategory);
                 Toast.makeText(getContext(), "Saved", Toast.LENGTH_SHORT).show();
             }
         }

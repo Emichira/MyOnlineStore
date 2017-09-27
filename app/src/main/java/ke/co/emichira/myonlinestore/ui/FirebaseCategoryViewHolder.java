@@ -54,7 +54,7 @@ public class FirebaseCategoryViewHolder extends RecyclerView.ViewHolder implemen
 
         nameTextView.setText(category.getName());
         priceTextView.setText("Price: " + "$" + category.getSalePrice());
-        categoryTextView.setText("Category: " + category.getCategoryPath());
+//        categoryTextView.setText("Category: " + category.getCategoryPath());
     }
 
     @Override
