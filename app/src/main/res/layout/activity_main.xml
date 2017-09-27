@@ -24,7 +24,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
-        android:text="Marketplace"
+        android:text="Twirls Marketplace"
         android:textColor="@color/colorPrimaryText"
         android:textSize="40sp"
         android:textStyle="bold" />
@@ -36,7 +36,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/appNameTextView"
-        android:text="Curls and Twirls sells the finest quality Human Hair Extensions at affordable prices"
+        android:text="sells products at affordable prices."
         android:textAlignment="center"
         android:textColor="@color/colorPrimaryText"
         android:textSize="30sp" />
@@ -48,7 +48,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:background="@color/colorAccent"
-        android:text="Find Categories"
+        android:text="Find Products"
         android:textColor="@color/colorTextIcons"
         android:textStyle="bold" />
 
@@ -67,14 +67,16 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="My Saved Items"
+        android:text="My Saved Products"
         android:id="@+id/savedCategoriesButton"
         android:background="@color/colorAccent"
         android:textColor="@color/colorTextIcons"
         android:visibility="visible"
         android:layout_above="@+id/findCategoriesButton"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="20dp" />
+        android:layout_marginBottom="20dp"
+        android:layout_alignLeft="@+id/appNameTextView"
+        android:layout_alignStart="@+id/appNameTextView"
+        android:layout_alignRight="@+id/appNameTextView"
+        android:layout_alignEnd="@+id/appNameTextView" />
 
 </RelativeLayout>
