@@ -11,35 +11,37 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        app:srcCompat="@drawable/homepage"
-        android:scaleType="centerCrop"
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="false"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/homepage" />
 
     <TextView
         android:id="@+id/appNameTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="74dp"
         android:text="Twirls Marketplace"
-        android:textColor="@color/colorPrimaryText"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="40sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/appNameTextView"
-        android:text="sells products at affordable prices."
+        android:text="Buy products at affordable prices."
         android:textAlignment="center"
-        android:textColor="@color/colorPrimaryText"
-        android:textSize="30sp" />
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/appNameTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:id="@+id/findCategoriesButton"
@@ -48,7 +50,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:background="@color/colorAccent"
-        android:text="Find Products"
+        android:text="Buy Products"
         android:textColor="@color/colorTextIcons"
         android:textStyle="bold" />
 
