@@ -16,7 +16,9 @@
         android:layout_alignParentTop="true"
         android:adjustViewBounds="false"
         android:scaleType="centerCrop"
-        app:srcCompat="@drawable/homepage" />
+        app:srcCompat="@drawable/droid"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:id="@+id/appNameTextView"
@@ -40,8 +42,10 @@
         android:textSize="30sp"
         android:layout_marginTop="24dp"
         android:layout_below="@+id/appNameTextView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignLeft="@+id/appNameTextView"
+        android:layout_alignStart="@+id/appNameTextView"
+        android:layout_alignRight="@+id/appNameTextView"
+        android:layout_alignEnd="@+id/appNameTextView" />
 
     <Button
         android:id="@+id/findCategoriesButton"

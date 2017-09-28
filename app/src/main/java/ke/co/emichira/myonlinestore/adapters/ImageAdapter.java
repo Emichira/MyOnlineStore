@@ -50,14 +50,6 @@ public class ImageAdapter extends BaseAdapter{
 
         // references to our images
         private Integer[] mImageIds = {
-                R.drawable.bondings,
-                R.drawable.brasilianische,
                 R.drawable.brasilianisches_haar,
-                R.drawable.brazilian_wavy,
-                R.drawable.clip_in,
-                R.drawable.glatt,
-                R.drawable.microlings,
-                R.drawable.tressen_mit_lace,
-                R.drawable.volkolf,
         };
     }
