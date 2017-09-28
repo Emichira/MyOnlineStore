@@ -104,6 +104,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
                         if (task.isSuccessful()) {
                             Log.d(TAG, "Authentication successful");
+                            createFirebaseUserProfile(task.getResult().getUser());
                         } else {
                             Toast.makeText(RegisterActivity.this, "Authentication failed.",
                                     Toast.LENGTH_SHORT).show();
