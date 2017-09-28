@@ -12,21 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".ui.MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>        </activity>
+            android:theme="@style/NoActionBarTheme">
+        </activity>
         <activity android:name=".ui.CategoriesActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="ke.co.emichira.myonlinestore.ui.MainActivity" />
         </activity>
         <activity android:name=".ui.SignInActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="ke.co.emichira.myonlinestore.ui.MainActivity" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".ui.RegisterActivity">
             <meta-data
@@ -34,7 +32,11 @@
                 android:value="ke.co.emichira.myonlinestore.ui.MainActivity" />
         </activity>
         <activity android:name=".ui.CategoryDetailActivity" />
-        <activity android:name=".ui.SavedCategoriesActivity"></activity>
+        <activity android:name=".ui.SavedCategoriesActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ke.co.emichira.myonlinestore.ui.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
