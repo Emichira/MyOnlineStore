@@ -15,6 +15,7 @@
             android:id="@+id/productImageView"
             android:layout_width="match_parent"
             android:layout_height="270dp"
+            android:layout_above="@+id/relaLayout"
             android:scaleType="centerCrop"
             android:src="@drawable/brasilianisches_haar" />
 
@@ -22,10 +23,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/white"
+            android:id="@+id/relaLayout"
             android:paddingTop="20dp"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:paddingBottom="20dp">
+            android:paddingBottom="5dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -63,8 +65,9 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_above="@+id/saveRestaurantButton"
+                android:layout_above="@+id/saveItemsButton"
                 android:paddingLeft="30dp"
+                android:layout_marginBottom="1dp"
                 android:paddingTop="20dp"
                 android:paddingRight="30dp">
 
@@ -91,7 +94,6 @@
                     android:textColor="@color/colorTextIcons"
                     android:textSize="15sp"
                     android:textStyle="bold"
-                    android:layout_marginBottom="10dp"
                     android:gravity="center_vertical"/>
 
             </LinearLayout>
