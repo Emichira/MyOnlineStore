@@ -28,6 +28,8 @@ import ke.co.emichira.myonlinestore.services.WalmartService;
 import okhttp3.Call;
 import okhttp3.Response;
 
+import static android.R.attr.id;
+
 public class CategoriesActivity extends AppCompatActivity {
     public static final String TAG = CategoriesActivity.class.getSimpleName();
 
@@ -100,6 +102,16 @@ public class CategoriesActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+
+        int id = item.getItemId();
+
+        // This refers to the Up navigation button in the action bar
+        if (id == android.R.id.home) {
+            finish();
+            overridePendingTransition(R.anim.left_in, R.anim.right_out);
+            return true;
+        }
+
         return super.onOptionsItemSelected(item);
     }
 
@@ -146,5 +158,12 @@ public class CategoriesActivity extends AppCompatActivity {
 
     private void addToSharedPreferences(String categories) {
         mEditor.putString(Constants.PREFERENCES_SEARCH_KEY, categories).apply();
+    }
+
+    // onBackPressed is what is called when back is hit, call `overridePendingTransition`
+    @Override
+    public void onBackPressed() {
+        finish();
+        overridePendingTransition(R.anim.left_in, R.anim.right_out);
     }
 }

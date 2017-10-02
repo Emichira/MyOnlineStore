@@ -25,9 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Bind(R.id.findCategoriesButton) Button mFindCategoriesButton;
     @Bind(R.id.appNameTextView) TextView mAppNameTextView;
-//    @Bind(R.id.signInButton) Button mSignInButton;
     @Bind(R.id.savedCategoriesButton) Button mSavedRestaurantsButton;
-//    @Bind(R.id.signUpButton) Button mSignUpButton;
 
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
@@ -108,15 +106,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (v == mFindCategoriesButton) {
             Intent intent = new Intent(MainActivity.this, CategoriesActivity.class);
             startActivity(intent);
+            overridePendingTransition(R.anim.right_in, R.anim.left_out);
         }
 
         if (v == mSavedRestaurantsButton) {
             Intent intent = new Intent(MainActivity.this, SavedCategoriesActivity.class);
             startActivity(intent);
         }
-//        if (v == mSignInButton) {
-//            Intent intent = new Intent(MainActivity.this, SignInActivity.class);
-//            startActivity(intent);
-//        }
-    }
 }
