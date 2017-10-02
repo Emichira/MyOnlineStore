@@ -14,8 +14,9 @@
         <activity android:name=".ui.MainActivity">
             android:theme="@style/NoActionBarTheme">
         </activity>
-        <activity android:name=".ui.CategoriesActivity">
-            <meta-data
+        <activity android:name=".ui.CategoriesActivity"
+                  android:theme="@style/AppTheme.Category">
+        <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="ke.co.emichira.myonlinestore.ui.MainActivity" />
         </activity>
@@ -31,7 +32,9 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="ke.co.emichira.myonlinestore.ui.MainActivity" />
         </activity>
-        <activity android:name=".ui.CategoryDetailActivity" />
+        <activity android:name=".ui.CategoryDetailActivity"
+            android:theme="@style/AppTheme.Detail">
+        </activity>
         <activity android:name=".ui.SavedCategoriesActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

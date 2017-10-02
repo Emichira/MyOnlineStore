@@ -56,7 +56,7 @@ public class CategoryListAdapter extends RecyclerView.Adapter<CategoryListAdapte
     }
 
     public class CategorytViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        @Bind(R.id.imageView) ImageView mImageView;
+        @Bind(R.id.productImageView) ImageView mproductImageView;
         @Bind(R.id.nameTextView) TextView mNameTextView;
         @Bind(R.id.priceTextView) TextView mPriceTextView;
 
@@ -86,7 +86,7 @@ public class CategoryListAdapter extends RecyclerView.Adapter<CategoryListAdapte
                     .load(category.getLargeImage())
                     .resize(MAX_WIDTH, MAX_HEIGHT)
                     .centerCrop()
-                    .into(mImageView);
+                    .into(mproductImageView);
             mNameTextView.setText(category.getName());
             mPriceTextView.setText("Price $ " + category.getSalePrice());
         }
