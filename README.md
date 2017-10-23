@@ -4,7 +4,7 @@ My Online Store App is an Android application that provides users a marketplace 
 
 ## About Curls & Twirls
 
-This an iOS app that provides a marketplace where you will find some of the finest quality grade Virgin Remy Brazilian, Malaysian, Peruvian, Indian, Cambodian, and Mongolian hair, along with premium made closures, frontal and wigs.
+This an Android application that provides a marketplace where you will find some of the finest quality grade Virgin Remy Brazilian, Malaysian, Peruvian, Indian, Cambodian, and Mongolian hair, along with premium made closures, frontal and wigs.
 At Curls and Twirls we strive to provide you the finest quality hair extensions at an affordable price with a guarantee of good service.
 
 # Getting Started
