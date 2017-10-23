@@ -1,6 +1,6 @@
 # My Online Store ~ Curls and Twirls.
 
-My Online Store App is an iOS app that provides users a marketplace called Curls & Twirls for buying beauty & hair products.
+My Online Store App is an Android application that provides users a marketplace called Curls & Twirls for buying beauty & hair products.
 
 ## About Curls & Twirls
 
